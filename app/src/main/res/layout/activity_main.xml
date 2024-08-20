@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/playerScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Игрок: 0"
+        android:textSize="24sp"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/pirateScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Пират: 0"
+        android:textSize="24sp"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/roundsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Раундов: 0"
+        android:textSize="20sp"
+        android:layout_below="@id/playerScoreTextView"/>
+
+    <Button
+        android:id="@+id/startGameButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Начать игру"
+        android:layout_below="@id/roundsTextView"/>
+
+    <EditText
+        android:id="@+id/betInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Сделать ставку"
+        android:inputType="number"
+        android:layout_below="@id/startGameButton"/>
+
+    <Button
+        android:id="@+id/placeBetButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сделать ставку"
+        android:layout_below="@id/betInput"/>
+
+    <Button
+        android:id="@+id/activateKrakenButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Активировать кракена"
+        android:layout_below="@id/placeBetButton"/>
+
+    <TextView
+        android:id="@+id/winnerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:layout_below="@id/activateKrakenButton"/>
+</RelativeLayout>
